@@ -1,0 +1,28 @@
+// ======== Admin Menu styles ========
+#menu-items {
+    height: $menuItem_H+20;
+    width: 62%;
+    min-width: 505px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid purple;
+    // @include border-radius(50px);
+    background-color: black;
+    // background-color: white;
+    // @include shader(0.5);
+    .menu-item {
+        float: left;
+        width: $menuItem_W;
+        height: $menuItem_H;
+        margin: $menuItem_mar;
+        padding: $menuItem_pad;
+        text-align: center;
+        // font-size: $default-font-size*1.5;
+        color: $menuItem_txt;
+        background-color: $menuItem_bg;
+    }
+    .menu-item:hover {
+        color: $menuItem_bg;
+        background-color: $menuItem_hov;
+    }
+}

@@ -1,0 +1,23 @@
+// ======= Colors =======
+$default-color: #139EFA; // Blue
+$colorPrimary: #02C43C; // Green
+$colorSecondary: #A906E5; // Purple
+
+// ======= mainMenu Variables =======
+$menuItem_W: 100px;
+$menuItem_H: 30px;
+$menuItem_mar: 5px;
+$menuItem_pad: 5px;
+$menuItem_bg: $default-color;
+$menuItem_hov: $colorPrimary;
+$menuItem_txt: white;
+
+// ======= Header =======
+#header {
+    background-color: aqua;
+    height: 150px;
+    width: 100%;
+}
+
+// ======= Imports =======
+@import 'adminMenu';
