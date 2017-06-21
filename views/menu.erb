@@ -1,0 +1,21 @@
+<!-- ======= views/menu.erb ======= -->
+<!-- <div class="menu-item">home</div>
+<div class="menu-item">profile</div>
+<div class="menu-item">portfolio</div>
+<div class="menu-item">resume</div>
+<div class="menu-item">interests</div> -->
+
+<!-- == dynamically create menu items == -->
+<% menu_items_array = [ "home", "profile", "portfolio", "resume", "interests"] %>
+<div id="menu-items">
+  <% for z in menu_items_array %>
+  <% h = z %>
+    <% if z == "home" %>
+        <% h = "home" %>
+        <% z = "/" %>
+    <% end %>
+    <a href = <%= z %>>
+      <div class="menu-item"> <%= h %></div>
+    </a>
+  <% end %>
+</div>
