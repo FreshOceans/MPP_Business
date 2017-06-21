@@ -1,16 +1,27 @@
-#header {
-  background-color: aqua;
+/* ==== General ==== */
+body {
+  background-color: #415DE5;
+  margin: 0; }
+
+/*========= Footer =========*/
+#footer {
+  font-size: 15px;
+  width: auto;
+  height: 15px;
+  text-align: center;
+  color: white; }
+
+#employees {
+  background-color: yellow;
   height: 150px;
   width: 100%; }
 
 #menu-items {
   height: 50px;
-  width: 62%;
-  min-width: 505px;
-  margin: 20px;
+  width: 100%;
+  overflow: hidden;
   padding: 10px;
-  border: 2px solid purple;
-  background-color: black; }
+  background-color: #ACACAC; }
   #menu-items .menu-item {
     float: left;
     width: 100px;
@@ -18,10 +29,61 @@
     margin: 5px;
     padding: 5px;
     text-align: center;
-    color: white;
-    background-color: #139EFA; }
+    line-height: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color: black;
+    background-color: #139EFA;
+    cursor: pointer; }
   #menu-items .menu-item:hover {
-    color: #139EFA;
+    color: white;
     background-color: #02C43C; }
+
+/*===== Modal ========*/
+#primeModal {
+  display: none;
+  position: fixed;
+  color: white;
+  width: 508px;
+  height: 370px;
+  margin-top: -100px;
+  margin-left: -254px;
+  top: 50%;
+  left: 50%;
+  background-color: #ACACAC;
+  z-index: 5;
+  border-radius: 10px;
+  /*border: 1px solid black;*/ }
+
+#modalTxt {
+  background-color: #415DE5;
+  margin: auto;
+  margin-top: 60px;
+  padding: 2px;
+  border: 1px solid black;
+  height: 250px;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px; }
+
+#modalTxt > p {
+  color: white;
+  font-family: 'Arima Madurai', cursive;
+  font-size: 17px;
+  font-style: italic;
+  letter-spacing: 1px; }
+
+#exit {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 4px; }
+
+#exit:hover,
+#exit:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */

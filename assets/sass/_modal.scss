@@ -1,0 +1,49 @@
+/*===== Modal ========*/
+#primeModal {
+  display: none;
+  position: fixed;
+  color: white;
+  width: 508px;
+  height: 370px;
+  margin-top: -100px;
+  margin-left: -254px;
+  top: 50%;
+  left: 50%;
+  background-color: #ACACAC;
+  z-index: 5;
+  border-radius: 10px;
+  /*border: 1px solid black;*/
+}
+#modalTxt {
+  background-color: #415DE5;
+  margin: auto;
+  margin-top: 60px;
+  padding: 2px;
+  border: 1px solid black;
+  height: 250px;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#modalTxt > p {
+  color: white;
+  font-family: 'Arima Madurai', cursive;
+  font-size: 17px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+#exit {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 4px;
+}
+#exit:hover,
+#exit:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

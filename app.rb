@@ -7,9 +7,11 @@ require "sass"
 # ======= database =======
 # set :database, "sqlite3:portfolio.db"  # sets the db name (will be created if it does not exist)
 
+# ===== Class variable =====
+@@user_array = []
+
 # ===== five users =====
 def make_user_data
-	@@user_array = []
 	text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	text_array = text.gsub(/[.,]/, '').split
 	(0..4).each do |i|
@@ -47,7 +49,16 @@ post '/register' do
 	@fname = params[:fname]
 	@lname = params[:lname]
     @email = params[:email]
-	
+	user_form_data = {
+		id: @@user_array.length,
+		username: params[:username],
+		password: params[:password],
+		fname: params[:fname],
+		lname: params[:lname],
+	    email: params[:email]
+	}
+	@@user_array << user_form_data
+	puts "@@user_array: #{@@user_array}"
     erb :profile
 end
 

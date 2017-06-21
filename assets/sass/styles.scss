@@ -10,14 +10,30 @@ $menuItem_mar: 5px;
 $menuItem_pad: 5px;
 $menuItem_bg: $default-color;
 $menuItem_hov: $colorPrimary;
-$menuItem_txt: white;
+$menuItem_txt: black;
+
+/* ==== General ==== */
+body {
+  background-color: #415DE5;
+  margin: 0;
+}
+
+/*========= Footer =========*/
+#footer {
+  // font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  width:auto;
+  height: 15px;
+  text-align: center;
+  color: white;
+}
 
 // ======= Header =======
-#header {
-    background-color: aqua;
-    height: 150px;
-    width: 100%;
-}
+// #header {
+//     background-color: aqua;
+//     height: 150px;
+//     width: 100%;
+// }
 
 // ======= Employee Directory ======
 #employees {
@@ -35,3 +51,4 @@ $menuItem_txt: white;
 
 // ======= Imports =======
 @import 'adminMenu';
+@import 'modal';

@@ -3,6 +3,7 @@
   <!-- ======= ======= ======= head ======= ======= ======= -->
 	<head>
 	    <link rel="stylesheet" type="text/css" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	</head>
   <!-- ======= ======= ======= body ======= ======= ======= -->
 	<body>
@@ -14,10 +15,16 @@
 				<%= erb :admin_menu %>
 			</div>
 	    </div>
+		<!-- ========= Modal Test ========== -->
+		<div id="primeModal">
+		  <div id="modalTxt">
+					<div id="exit">&times;</div>
+			<p>	<%= erb :register_form %></p>
+		  </div>
+		</div>
 	    <!-- ======= content ======= -->
 		<div id="yield-container" class="section">
 			<%= yield %>
-			<a href="register_form">Register</a>
 		</div>
 	    <!-- ======= footer ======= -->
 	    <div id="footer" class="section">
