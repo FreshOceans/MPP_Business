@@ -1,13 +1,15 @@
 <!-- ======= view/register_form.erb ======= -->
 <h1>Register</h1>
 
-<!-- username, password, email, dob  -->
+<!-- username, password, fname, lname, email  -->
 
 <form  id="register_form" method="POST" action="/register">
-    <div><label for="username">Username</label><input type="text" name="username" value="alaska"></div>
+    <div><label for="username">Username</label><input type="text" name="username" value="FreshOceans"></div>
     <div><label for="password">Password</label><input type="password" name="password" value="newyork"></div>
     <div><label for="fname">First Name</label><input type="fname" name="fname" value="alaska"></div>
     <div><label for="lname">Last Name</label><input type="lname" name="lname" value="kansas"></div>
     <div><label for="email">Email</label><input type="email" name="email" value="alaska@gmail.com"></div>
+    <input type="checkbox" name="member_checkbox">Member<br>
+    <input type="checkbox" name="admin_checkbox">Admin<br>
     <input type="submit">
 </form>
