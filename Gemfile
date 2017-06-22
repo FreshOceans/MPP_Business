@@ -5,8 +5,7 @@ ruby '2.4.0'
 gem 'sinatra'
 gem 'activerecord'
 gem 'sinatra-activerecord'
-gem 'rake'
-# == sqlite3 ==
 gem 'sqlite3'
+gem 'rake'
 # == project ==
 gem 'sass'

@@ -14,8 +14,13 @@ $menuItem_txt: black;
 
 /* ==== General ==== */
 body {
-  background-color: #415DE5;
-  margin: 0;
+  // background-color: #415DE5;
+  // margin: 0;
+    background-image: url(images/bnw.jpeg);
+    // background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // border-radius: 10px;
 }
 
 /*========= Footer =========*/
